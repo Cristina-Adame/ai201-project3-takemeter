@@ -70,4 +70,18 @@ posts can decide if other users need help with their project, keep up with proje
       ```      
 
 **Distinctions** : 
-  - These distinctions offer the users the ability to quickly nagivate to inspiration posts, follow along on other users' projects, learn about techniques used by others, and a way to label their posts so their questions may be replied to. 
+  - These distinctions offer the users the ability to quickly nagivate to inspiration posts, follow along on other users' projects, learn about techniques used by others, and a way to label their posts so their questions may be replied to.
+
+
+## Hardest Anticipated Edge Case ##
+The hardest anticapted edge case will be the situation where a post includes a work in progress with a question included. It would be difficult to clearly exclusively label it as a work in progress when there is a chat-like question prompting information from other users. Specifying a decision rule that if an image is included in the post, it is considered a work in progress post since chat post are more likely to be exclusively text blocks.
+  - Example:
+    ```
+    " [Image included]
+      I'm working on a (mostly) self drafted pattern depicting the blazons of players and important NPC's from
+      one of my TTRPG's. It's a gift for our gamemaster and I need to finish it in July. However, I'm not sure
+      if I should add backstitching to it and if so , how/which colours? Tried metallic threads during a test,
+      which made me rage quit.
+
+      Any advice how to proceed? Leave like this or add backstitch?"
+    ```
