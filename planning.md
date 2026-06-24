@@ -85,3 +85,14 @@ The hardest anticapted edge case will be the situation where a post includes a w
 
       Any advice how to proceed? Leave like this or add backstitch?"
     ```
+## Data Collection ##
+Data will be manually collected from the subreddit 'r/CrossStitch' by searching through posts and copying the text into the CSV file. With the note if there is an inclusion of an image or not. For 200 examples, a close even split will be 67 of each type of label-specific post. 
+
+## Evaluation Metrics## 
+Since accuracy alone is not enough, the additional evaluation metric used will be F1 due to it taking into account precision and recall. Having a high metric in one will very obviously demonstrate the lack in the other and will provide insight into the evaluation of the model.
+
+## Definition of Success ##
+Since this is a form of filtering, success would be an F1 score of 0.7 and above. The data set is expected to be balanced leading to a high expected F1 score but with a small data set of 200, one mislabel can greatly affect the score of the model. Overall accuracy, success would be 75% to ensure the model is not making too many mistakes.
+
+## AI Tool Plan ##
+Plan to use Claude for label stress-testing to see if the handling of the hardest edge case was sufficient in situations where a post appears to be both work in progress and chat.
